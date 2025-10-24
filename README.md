@@ -95,3 +95,52 @@ Feel free to open issues or submit pull requests.
 ## 📜 License
 
 This project is licensed under the MIT License.
+
+
+
+
+
+
+## 🧩 Deployment Steps
+
+Follow these steps to deploy AWS infrastructure using Terraform and GitHub Actions.
+
+---
+
+### 1️⃣ Clone the Repository
+
+```sh
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+
+
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+
+
+aws configure
+
+cd terraform
+terraform init
+
+
+
+terraform validate
+terraform fmt
+
+
+
+terraform apply -auto-approve
+
+
+terraform destroy -auto-approve
+
+
+.github/workflows/terraform-ci.yml
+
+
+terraform destroy
+
+
+
+
